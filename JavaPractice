@@ -16,3 +16,32 @@ Box1 bo=new Box1();
 bo.volume(2,3,4);
 }
 }
+import java.util.*;
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+    int add(int c, int d, int e) {
+        return c + d + e;
+    }
+    double add(double f, double g) {
+        return f + g;
+    }
+}
+// Overloading
+public class Hehe {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        Scanner sc=new Scanner(System.in);
+	int a=sc.nextInt();
+	int b=sc.nextInt();
+	int c=sc.nextInt();
+	int d=sc.nextInt();
+	int e=sc.nextInt();
+	int f=sc.nextInt();
+	int g=sc.nextInt();
+        System.out.println("Add(a, b): " + calc.add(a, b));
+        System.out.println("Add(c, d, e): " + calc.add(c, d, e));
+        System.out.println("Add(f, g): " + calc.add(f, g));
+    }
+}
