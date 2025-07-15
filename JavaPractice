@@ -1,0 +1,18 @@
+// OOPS STARTING
+class Box1
+{
+ int width,height,depth;
+void volume(int w,int d,int h){
+ this.width=w;
+ this.depth=d;
+ this.height=h;
+ int vol=w*d*h;
+System.out.println("This is a box");
+ System.out.println("Tis the volume of the box: "+vol);
+}
+public static void main(String args[])
+{
+Box1 bo=new Box1();
+bo.volume(2,3,4);
+}
+}
